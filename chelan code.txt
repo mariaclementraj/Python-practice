@@ -1,0 +1,37 @@
+#chelan form
+num=int(input("Enter the amount "))
+two=num//2000
+ans=num-two*2000
+print("2000",two, "=",two*2000)
+thou=ans//1000
+ans=ans-thou*1000
+print("1000",ans, "=",ans*1000)
+five=ans//500
+ans=ans-five*500
+print("500",five, "=",five*500)
+to=ans//200
+ans=ans-to*200
+print("200",to, "=",to*200)
+hun=ans//100
+ans=ans-hun*100
+print("100",hun, "=",hun*100)
+fif=ans//50
+ans=ans-fif*50
+print("50",fif, "=",fif*50)
+tw=ans//20
+ans=ans-tw*20
+print("20",tw, "=",tw*20)
+ten=ans//10
+ans=ans-ten*10
+print("10",ten, "=",ten*10)
+five=ans//5
+ans=ans-five*5
+print("5",five, "=",five*5)
+too=ans//2
+ans=ans-too*2
+print("2",too, "=",too*2)
+one=ans//1
+ans=ans-one*1
+print("1",one, "=",one*1)
+
+
