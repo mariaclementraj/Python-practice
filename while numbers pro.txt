@@ -1,0 +1,39 @@
+#Niven number
+num=int(input("Enter the number "))
+val=num
+sum1=0
+while(num!=0):
+    rem=num%10
+    sum1+=rem
+    num=num//10
+if(val%sum1==0):
+    print("Given number is Niven number")
+else:
+    print("Given Number is not a Niven number")
+    
+#Neon number
+num=int(input("Enter the number "))
+val=num
+sum1=0
+num=num**2
+while(num!=0):
+    rem=num%10
+    sum1+=rem
+    num=num//10
+if(sum1==val):
+    print("Given number is Neon number")
+else:
+    print("Given Number is not a Neon number")
+#Happy number
+num=int(input("Enter the number "))
+while(num!=1):
+    sum1=0
+    while(num!=0):
+        rem=num%10
+        sum1+=rem**2
+        num=num//10
+    num=sum1
+if(sum1==1):
+    print("Given number is Happy number")
+else:
+    print("Given Number is not a Happy number")
