@@ -1,0 +1,31 @@
+#Find the minimum value
+list1=[20,5,52,8,10,15]
+small=list1[0]
+for i in list1:
+    if i<small:
+        print(i)
+print("Smallest value is", small)
+
+#Find the maximum value
+list1=[20,5,52,8,10,75]
+maxi=list1[0]
+for i in list1:
+    if i>maxi:
+        maxi=i
+print("biggest value is", maxi)
+
+#ascending Order
+l=[20,5,52,8,10,75]
+for i in range(len(l)):
+    for j in range(i+1,len(l)):
+        if l[i]>l[j]:
+            l[i],l[j]=l[j],l[i]
+print(l)
+
+#Decending Order
+l=[20,5,52,8,10,75]
+for i in range(len(l)):
+    for j in range(i+1,len(l)):
+        if l[i]<l[j]:
+            l[i],l[j]=l[j],l[i]
+print(l)
