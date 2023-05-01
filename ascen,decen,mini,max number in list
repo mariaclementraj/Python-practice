@@ -3,7 +3,7 @@ list1=[20,5,52,8,10,15]
 small=list1[0]
 for i in list1:
     if i<small:
-        print(i)
+        small=i
 print("Smallest value is", small)
 
 #Find the maximum value
