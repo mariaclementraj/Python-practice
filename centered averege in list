@@ -1,0 +1,26 @@
+#centered_average
+small=0
+maxi=0
+sum=0
+total=0
+l=()
+list1=list(l)
+end=int(input("Enter the Range"))
+for i in range (end):
+    inputval=int(input("Enter the range value"))
+    list1.append(inputval)
+small=list1[0]
+for i in list1:
+	if i<small:
+	   small=i
+maxi=list1[0]
+for i in list1:
+	if i>maxi:
+	   maxi=i
+for i in range (len(list1)):
+    if list1[i]==list[i+1]:
+        continue
+    sum=sum+list1[i]
+total=sum-small-maxi
+ans=total%len(list1)-1
+print(ans)
