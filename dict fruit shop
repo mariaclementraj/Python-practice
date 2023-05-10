@@ -12,9 +12,12 @@ for i in dict1.values():
         if fru in dict2.keys():
             z=dict2.get(fru)
             how=int(input("Enter how much do you want "))
+            print("Each", fru, "rate is = ",z)
             bill=how*z
             total=total+bill
             print("Total cost of",fru, "is = ", bill)
 if(total>0):
     print("Total bill is = ",total)
 print("Thank you! visit again")
+
+
