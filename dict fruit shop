@@ -1,0 +1,20 @@
+#Fruits shop program
+total=0
+dict1={"fru1":"apple","fru2":"mango","fru3":"orange","fru4":"banana","fru5":"grape","fru6":"pineapple","fru7":"lemon","fru8":"papaya"}
+dict2={"apple":50,"mango":40,"orange":30,"banana":5,"grape":40,"pineapple":70,"lemon":5,"papaya":40}
+print("Welcome to my fruits shop")
+for i in dict1.values():
+    fru=input("Enter the fruits name ")
+    if fru not in dict1.values():
+        print("This fruits not available now please visit later")
+        break
+    else:
+        if fru in dict2.keys():
+            z=dict2.get(fru)
+            how=int(input("Enter how much do you want "))
+            bill=how*z
+            total=total+bill
+            print("Total cost of",fru, "is = ", bill)
+if(total>0):
+    print("Total bill is = ",total)
+print("Thank you! visit again")
