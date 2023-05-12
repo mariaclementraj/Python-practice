@@ -23,56 +23,84 @@ d={}
 list1=[1,1,2,5,1,2,6]
 for i in range(len(list1)):
     key=list1[i]
-    if list1[i]in list1:
+    if list1[i] in list1:
         count1=list1.count((list1[i]))
     d[key]=count1
 print(d)
 
-Count vowels
+#sort a dictionary
+d={}
+length=int(input("Enter the length of the dictionary "))
+for i in range (length):
+    key=input("Enter the key value in name")
+    d[key]=int(input("Enter the value in age"))
+print(d)
+sort={}
+sort=sorted(d.keys())
+print(sort)
+sort=sorted(d.values())
+print(sort)
+
+#Reverse the sorted Order
+sort=sorted(d.keys(), reverse=True)
+print(sort)
+sort=sorted(d.values(), reverse=True)
+print(sort)
+
+#Count vowels
 count1=0
-str1=input("Enter the string")
+count2=0
+count3=0
+count4=0
+count5=0
+count6=0
+count7=0
+count8=0
+count9=0
+count10=0
+str1=input("Enter the string ")
 d={}
 for i in range(len(str1)):
     key="a"
-    if "a" in str1:
-        count1=str1.count("a")
+    if str1[i]=="a":
+        count1+=1
     d[key]=count1
     key="A"
-    if "A" in str1:
-        count1=str1.count("A")
-    d[key]=count1
+    if str1[i]=="A":
+        count2+=1
+    d[key]=count2
     key="e"
-    if "e" in str1:
-        count1=str1.count("e")
-    d[key]=count1
+    if str1[i]=="e":
+        count3+=1
+    d[key]=count3
     key="E"
-    if "E" in str1:
-        count1=str1.count("E")
-    d[key]=count1
+    if str1[i]=="E":
+        count4+=1
+    d[key]=count4
     key="i"
-    if "i" in str1:
-        count1=str1.count("i")
-    d[key]=count1
+    if str1[i]=="i":
+       count5+=1
+    d[key]=count5
     key="I"
-    if "I" in str1:
-        count1=str1.count("I")
-    d[key]=count1
+    if str1[i]=="I":
+        count6+=1
+    d[key]=count6
     key="o"
-    if "o" in str1:
-        count1=str1.count("o")
-    d[key]=count1
+    if str1[i]=="o":
+       count7+=1
+    d[key]=count7
     key="O"
-    if "O" in str1:
-        count1=str1.count("O")
-    d[key]=count1
+    if str1[i]=="O":
+        count8+=1
+    d[key]=count8
     key="u"
-    if "u" in str1:
-        count1=str1.count("u")
-    d[key]=count1
+    if str1[i]=="u":
+       count9+=1
+    d[key]=count9
     key="U"
-    if "U" in str1:
-        count1=str1.count("U")
-    d[key]=count1
-
+    if str1[i]=="U":
+        count10+=1
+    d[key]=count10
 print(d)
+
 
