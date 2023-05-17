@@ -1,0 +1,41 @@
+#Fruits shop program
+dict1={"apple":50,"mango":40,"orange":30}
+dict2={"apple": {"price":60,"discount":50},"mango": {"price":50,"discount":10},"orange": {"price":40,"discount":5}}
+def bill(quantity,price,discount):
+    print("Yes this quantity avalable and",discount,"discount available")
+    print("Each price is = ",price)
+    bill=quantity*price*discount/100
+    print("Total amount is = ",bill)
+def check(userinput):
+    print("Yes this fruits is avalibale")
+    quantity=int(input("How many fruits do you want "))
+    if dict1[userinput]>=quantity:
+        bill(quantity, dict2[userinput]["price"], dict2[userinput]["discount"])
+print("Welcome to my fruits shop")
+userinput=input("Which fruits do you want ")
+if userinput in dict1:
+    print("Yes this fruits is avalibale")
+    quantity=int(input("How many fruits do you want "))
+    if dict1[userinput]>=quantity:
+        bill(quantity, dict2[userinput]["price"], dict2[userinput]["discount"])
+    else:
+        print("This quantity is not available")
+        other=input("Do you want any other fruits ")
+        if (other=="yes" or other=="YES"):
+            userinput=input("Which fruits do you want ")
+            if userinput in dict1:
+                print("Yes this fruits is available")
+                quantity=int(input("How many fruits do you want "))
+                if dict1[userinput]>=quantity:
+                    bill(quantity, dict2[userinput]["price"], dict2[userinput]["discount"])
+        else:
+            print("Thank you visit again...")
+else:
+    print("This fruits is not available")
+    other=input("Do you want any other fruits ")
+    if (other=="yes" or other=="YES"):
+        userinput=input("Which fruits do you want ")
+        if userinput in dict1:
+            check(userinput)
+    else:
+        print("Thank you visit again...")
