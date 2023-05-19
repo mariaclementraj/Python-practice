@@ -1,0 +1,46 @@
+#Factorial finding
+def fact(k):
+  if(k==0):
+    return 1
+  result = k*fact(k-1)
+  return result
+n=int(input("Enter the number "))
+result=fact(n)
+print("The factorial of given number is = ",result)
+
+
+# lambda exercises
+#1.
+res=lambda a:a+15
+print(res(10))
+res=lambda a,b:a*b
+print(res(10,2))
+
+#2
+def multi(n):
+    return lambda x:x*n
+res=multi(3)
+print(res(5))
+
+#3
+subject_marks = [('English', 88), ('Science', 90), ('Maths', 97), ('Social sciences', 82)]
+subject_marks.sort(key = lambda x: x[1])
+print(subject_marks)
+
+#5
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print("Even numbers")
+even_nums = list(filter(lambda x: x%2 == 0, nums))
+print(even_nums)
+print("Odd numbers")
+odd_nums = list(filter(lambda x: x%2 != 0, nums))
+print(odd_nums)
+
+#6
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print("\nSquare every number")
+square_nums = list(map(lambda x: x ** 2, nums))
+print(square_nums)
+print("\nCube every number")
+cube_nums = list(map(lambda x: x ** 3, nums))
+print(cube_nums)
