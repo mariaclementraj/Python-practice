@@ -1,0 +1,82 @@
+#Single inheritance
+class Base():
+    def display(self):
+        print("I am a base class")
+class Derived(Base):
+    def display1(self):
+        print("I am a derived class")
+obj=Derived()
+obj.display()
+obj.display1()
+
+#Multi-Level inheritance
+class Base1():
+    def display(self):
+        print("I am a base class1")
+class Base2(Base1):
+    def display1(self):
+        print("I am a base class2")
+class Derived(Base2):
+    def display2(self):
+        print("I am a derived class")
+obj=Derived()
+obj.display()
+obj.display1()
+obj.display2()
+
+#Multiple inheritance
+class Base1():
+    def display(self):
+        print("I am a base class1")
+class Base2():
+    def display1(self):
+        print("I am a base class2")
+class Derived(Base1,Base2):
+    def display2(self):
+        print("I am a derived class")
+obj=Derived()
+obj.display()
+obj.display1()
+obj.display2()
+
+#Hierarchical Inheritance
+class Base():
+    def display(self):
+        print("I am a base class")
+class Derived1(Base):
+    def display1(self):
+        print("I am a derived class1")
+class Derived2(Base):
+    def display2(self):
+        print("I am a derived class2")
+obj=Derived1()
+obj1=Derived2()
+obj.display()
+obj.display1()
+obj1.display()
+obj1.display2()
+
+#Hybrid Inheritance 
+class Base1():
+    def display(self):
+        print("I am a base class1")
+class Base2():
+    def display1(self):
+        print("I am a base class2")
+class Derived1(Base1):
+    def display2(self):
+        print("I am a derived class1")
+class Derived2(Derived1,Base2):
+    def display3(self):
+        print("I am a derived class2")
+obj=Derived1()
+obj1=Derived2()
+obj.display()
+obj.display2()
+obj1.display()
+obj1.display1()
+obj1.display2()
+obj1.display3()
+
+
+       
