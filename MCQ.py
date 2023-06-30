@@ -9,7 +9,7 @@ list1=[{"_id":1,"question":"Who developed Python Programming Language","op1":"a)
        {"_id":3,"question":"Is Python case sensitive when dealing with identifiers","op1":"a) no","op2":"b) yes","op3":"c) machine dependent","op4":"d) none of the mentioned","ans":"b"},
        {"_id":4,"question":"Which of the following is the correct extension of the Python file","op1":"a).python","op2":"b).pl","op3":"c).py","op4":"d).p","ans":"c"},
        {"_id":5,"question":"Is Python code compiled or interpreted","op1":"a) Python code is both compiled and interpreted","op2":"b) Python code is neither compiled nor interpreted","op3":"c) Python code is only compiled","op4":"d) Python code is only interpreted","ans":"a"}]
-#x=col.insert_many(list1)
+x=col.insert_many(list1)
 
 
 for x in col.find():
@@ -26,7 +26,7 @@ for x in col.find():
         count1+=1
     print()
 
-print("You have answerd for", count,"questions", "and not answerd for", count1,"questions")
+print("You have answerd for", count,"questions")
+print("You have not answerd for", count1,"questions")
     
-
 
